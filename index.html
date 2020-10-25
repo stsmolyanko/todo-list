@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container clearfix">
+            <section class="todolist">
+                <h2>Список дел:</h2>
+                <ul>
+                </ul>
+                <small class="list-is-empty">Список пуст...</small>
+            </section>
+
+            <section class="addnewitem">
+                <h2>Добавить новое дело</h2>
+                <form class="adding-form">
+                    <label for="title">* Название</label>
+                    <input type="text" id="title" placeholder="Например: Купить лошадь" class="form-title">
+                    <label for="descr">* Описание</label>
+                    <textarea id="descr" placeholder="Например: По цене 5000 рублей" class="form-description"></textarea>
+                    <input type="submit" id="submit-button" value="Добавить дело" class="add-item-button">
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,166 @@
+body, html {
+    background-color: rgb(248, 248, 248);
+}
+
+* {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 1440px;
+    min-height: 768px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    float: left;
+    padding-top: 61px;
+    width: 470px;
+}
+
+.todolist {
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 28px;
+}
+
+ul {
+    list-style: none;
+}
+
+.list-item {
+    width: 470px;
+    background-color: white;
+    color: #8993ad;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.list-item-header {
+    height: 52px;
+    padding: 17px 20px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #ebebeb;;
+}
+
+.list-item-header h3 {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.clear-button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url(img/clear-button.png) no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.clear-button:focus {
+    outline: none; 
+}
+
+.minimize-button {
+    float: right;
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    background: url(img/arrow.png) no-repeat;
+    background-position: center;
+    background-size: 35%;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.minimize-button:focus {
+    outline: none;
+}
+
+.rotated-minimize-button {
+    transform: rotate(180deg);
+    background-position: 40% 60%;
+    transition: 0.5s;
+}
+
+.list-item-description {
+    height: 80px;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+h3 {
+    color: black;
+}
+
+.list-is-empty {
+    display: inline-block;
+    margin-top: 46px;
+    color: #8993ad;
+}
+
+.adding-form {
+    height: 500px;
+    background-color: #fff;
+    padding: 29px 40px 56px;
+}
+
+.adding-form label {
+    font-size: 14px;
+    color: #8993ad;
+}
+
+.form-title {
+    width: 390px;
+    height: 45px;
+    border: 1px solid #ebebeb;
+    background-color: #f9f9f9;
+    margin-top: 6px;
+    margin-bottom: 28px;
+    padding-left: 13px;
+}
+
+.form-description {
+    resize: none;
+    width: 390px;
+    height: 230px;
+    border: 1px solid #ebebeb;
+    background-color: #f9f9f9;
+    padding-left: 13px;
+    padding-top: 18px;
+    margin-top: 6px;
+    margin-bottom: 26px;
+}
+
+.add-item-button {
+    width: 224px;
+    height: 55px;
+    background-color: #2174fd;
+    border: none;
+    color: white;
+}
+
+.error {
+    border: 1px solid red;
+}
